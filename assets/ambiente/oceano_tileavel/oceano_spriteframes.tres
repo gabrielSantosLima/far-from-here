@@ -1,0 +1,94 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean01.png" id="1_jfpei"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean02.png" id="2_xrp4q"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean03.png" id="3_eddw2"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean04.png" id="4_1fyxb"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean05.png" id="5_u6sdq"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean06.png" id="6_62ta1"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean07.png" id="7_aiudr"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean08.png" id="8_k4xhm"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean09.png" id="9_b3ffi"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean10.png" id="10_xtdhb"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean11.png" id="11_wqb1l"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean12.png" id="12_6v8vs"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean13.png" id="13_ev8mq"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean14.png" id="14_gqb87"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean15.png" id="15_xpmjk"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean16.png" id="16_m05ie"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean17.png" id="17_7tl7w"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean18.png" id="18_lbkh8"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean19.png" id="19_323wm"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean20.png" id="20_1a60n"]
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean21.png" id="21_1h8w0"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jfpei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xrp4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eddw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1fyxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u6sdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_62ta1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aiudr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k4xhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b3ffi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xtdhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wqb1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6v8vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ev8mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gqb87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xpmjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_m05ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7tl7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lbkh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_323wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1a60n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1h8w0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/controle_audio.gd" id="1_script"]
+
+[node name="ControleAudio" type="HBoxContainer"]
+theme_override_constants/separation = 10
+script = ExtResource("1_script")
+
+[node name="Mudo" type="Button" parent="."]
+custom_minimum_size = Vector2(40, 32)
+size_flags_vertical = 4
+tooltip_text = "Som ligado (M)"
+
+[node name="Volume" type="HSlider" parent="."]
+custom_minimum_size = Vector2(130, 32)
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 0.8

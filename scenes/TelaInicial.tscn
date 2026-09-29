@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean01.png" id="1_oceano"]
+[ext_resource type="Texture2D" path="res://FarFromHereLogo.png" id="2_logo"]
+[ext_resource type="Texture2D" path="res://PressSpaceToPlay.png" id="3_press"]
+[ext_resource type="Script" path="res://scripts/tela_inicial.gd" id="4_script"]
+[ext_resource type="PackedScene" path="res://scenes/ControleAudio.tscn" id="5_audio"]
+
+[node name="TelaInicial" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("4_script")
+
+[node name="OceanoFundo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_oceano")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Escurecer" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.02, 0.06, 0.12, 0.55)
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 60.0
+offset_right = 1000.0
+offset_bottom = 420.0
+texture = ExtResource("2_logo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PressSpace" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 500.0
+offset_right = 790.0
+offset_bottom = 600.0
+texture = ExtResource("3_press")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ControleAudio" parent="." instance=ExtResource("5_audio")]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 656.0
+offset_right = 324.0
+offset_bottom = 700.0

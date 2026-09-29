@@ -1,0 +1,521 @@
+[gd_scene format=3 uid="uid://c1yyel6pn4rgk"]
+
+[ext_resource type="Script" uid="uid://clhh7oxnhaprd" path="res://scripts/oceano.gd" id="1_hm5dp"]
+[ext_resource type="Texture2D" uid="uid://dv0o6itr3lak1" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean01.png" id="2_d8w7s"]
+[ext_resource type="Texture2D" uid="uid://tbreowgvnjp1" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean02.png" id="3_u8l5i"]
+[ext_resource type="Texture2D" uid="uid://cii0atwmg623a" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean03.png" id="4_fmbq4"]
+[ext_resource type="Texture2D" uid="uid://bmw7v7028ngky" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean04.png" id="5_bkrjd"]
+[ext_resource type="Texture2D" uid="uid://cefctilnoeab1" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean05.png" id="6_50t2c"]
+[ext_resource type="Texture2D" uid="uid://bjq7e0attp1xt" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean06.png" id="7_8j1cb"]
+[ext_resource type="Texture2D" uid="uid://bxdnfvbkevv4h" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean07.png" id="8_ia7qx"]
+[ext_resource type="Texture2D" uid="uid://fjt2lktlfix0" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean08.png" id="9_rnaom"]
+[ext_resource type="Texture2D" uid="uid://1vxthi4epau0" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean09.png" id="10_8hhyi"]
+[ext_resource type="Texture2D" uid="uid://bi21wgwh3h7vu" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean10.png" id="11_3yfv3"]
+[ext_resource type="Texture2D" uid="uid://bihdig75col40" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean11.png" id="12_lrl5p"]
+[ext_resource type="Texture2D" uid="uid://ddnm2ik3ob7em" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean12.png" id="13_uf5y0"]
+[ext_resource type="Texture2D" uid="uid://dtenmla1hq4a" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean13.png" id="14_x2m27"]
+[ext_resource type="Texture2D" uid="uid://da2m0is26xlkx" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean14.png" id="15_1f754"]
+[ext_resource type="Texture2D" uid="uid://cttjas4twkl0a" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean15.png" id="16_ihbkp"]
+[ext_resource type="Texture2D" uid="uid://bqracweti1p1o" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean16.png" id="17_qvha5"]
+[ext_resource type="Texture2D" uid="uid://yry2js40u3rb" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean17.png" id="18_52x0l"]
+[ext_resource type="Texture2D" uid="uid://ct3r5tu3yl7su" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean18.png" id="19_g0ron"]
+[ext_resource type="Texture2D" uid="uid://ls1fj6ido5tn" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean19.png" id="20_o6ewe"]
+[ext_resource type="Texture2D" uid="uid://c32p1ssn6idci" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean20.png" id="21_b0iat"]
+[ext_resource type="Texture2D" uid="uid://ox5l5bc14iq8" path="res://assets/ambiente/oceano_tileavel/WaterAnimations/ocean21.png" id="22_xvj74"]
+[ext_resource type="Script" uid="uid://bwmcnynqrjoeg" path="res://scripts/jogador.gd" id="23_sdfoc"]
+[ext_resource type="Texture2D" uid="uid://hq6igs4k6bc2" path="res://assets/navios/PNG/Default size/Ships/ship (1).png" id="24_ntq3m"]
+[ext_resource type="Script" uid="uid://diuc84pt68rge" path="res://scripts/inimigo.gd" id="25_p7d8f"]
+[ext_resource type="Texture2D" uid="uid://dqxadv20a7egc" path="res://assets/navios/PNG/Default size/Ships/ship (2).png" id="26_vix8l"]
+[ext_resource type="Texture2D" uid="uid://bqtnmrqsnn30j" path="res://assets/navios/PNG/Default size/Ships/ship (10).png" id="27_be3mx"]
+[ext_resource type="Texture2D" uid="uid://co1rvtd5l4syg" path="res://assets/navios/PNG/Default size/Ships/ship (5).png" id="28_dofdu"]
+[ext_resource type="Texture2D" uid="uid://db5okrjljk3dk" path="res://assets/navios/PNG/Default size/Ships/ship (3).png" id="29_oliep"]
+[ext_resource type="Script" uid="uid://b6tppn3p4lpe4" path="res://scripts/mira.gd" id="30_2i7m6"]
+[ext_resource type="Script" uid="uid://c5846owyd8lid" path="res://scripts/minimapa.gd" id="31_uto6q"]
+[ext_resource type="PackedScene" path="res://scenes/ControleAudio.tscn" id="32_gxn7c"]
+[ext_resource type="Script" uid="uid://12hac4dt3l77" path="res://scripts/barra_vida.gd" id="34_khlyj"]
+[ext_resource type="Script" uid="uid://12vrk2qd4rx2" path="res://scripts/barra_energia.gd" id="35_enrgy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8s7m5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_d8w7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u8l5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fmbq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bkrjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_50t2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8j1cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ia7qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rnaom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8hhyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3yfv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lrl5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_uf5y0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_x2m27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1f754")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ihbkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qvha5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_52x0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_g0ron")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_o6ewe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_b0iat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xvj74")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Fase1" type="Node2D" unique_id=513897132]
+
+[node name="Oceano" type="Node2D" parent="." unique_id=2123890143]
+script = ExtResource("1_hm5dp")
+
+[node name="Agua_0_0" type="AnimatedSprite2D" parent="Oceano" unique_id=1047494600]
+position = Vector2(-1026, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_1" type="AnimatedSprite2D" parent="Oceano" unique_id=1331565031]
+position = Vector2(-1026, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_2" type="AnimatedSprite2D" parent="Oceano" unique_id=232123717]
+position = Vector2(-1026, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_3" type="AnimatedSprite2D" parent="Oceano" unique_id=1030073501]
+position = Vector2(-1026, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_4" type="AnimatedSprite2D" parent="Oceano" unique_id=1350159112]
+position = Vector2(-1026, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_5" type="AnimatedSprite2D" parent="Oceano" unique_id=1073573919]
+position = Vector2(-1026, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_0_6" type="AnimatedSprite2D" parent="Oceano" unique_id=240882000]
+position = Vector2(-1026, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_0" type="AnimatedSprite2D" parent="Oceano" unique_id=181403403]
+position = Vector2(-684, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_1" type="AnimatedSprite2D" parent="Oceano" unique_id=1040493829]
+position = Vector2(-684, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_2" type="AnimatedSprite2D" parent="Oceano" unique_id=1914629080]
+position = Vector2(-684, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_3" type="AnimatedSprite2D" parent="Oceano" unique_id=1290226787]
+position = Vector2(-684, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_4" type="AnimatedSprite2D" parent="Oceano" unique_id=15094060]
+position = Vector2(-684, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_5" type="AnimatedSprite2D" parent="Oceano" unique_id=1445327373]
+position = Vector2(-684, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_1_6" type="AnimatedSprite2D" parent="Oceano" unique_id=1666231399]
+position = Vector2(-684, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_0" type="AnimatedSprite2D" parent="Oceano" unique_id=124843560]
+position = Vector2(-342, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_1" type="AnimatedSprite2D" parent="Oceano" unique_id=603021621]
+position = Vector2(-342, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_2" type="AnimatedSprite2D" parent="Oceano" unique_id=209337155]
+position = Vector2(-342, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_3" type="AnimatedSprite2D" parent="Oceano" unique_id=1477643634]
+position = Vector2(-342, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_4" type="AnimatedSprite2D" parent="Oceano" unique_id=26790756]
+position = Vector2(-342, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_5" type="AnimatedSprite2D" parent="Oceano" unique_id=1183953775]
+position = Vector2(-342, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_2_6" type="AnimatedSprite2D" parent="Oceano" unique_id=1241019252]
+position = Vector2(-342, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_0" type="AnimatedSprite2D" parent="Oceano" unique_id=104782007]
+position = Vector2(0, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_1" type="AnimatedSprite2D" parent="Oceano" unique_id=509001373]
+position = Vector2(0, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_2" type="AnimatedSprite2D" parent="Oceano" unique_id=1288811139]
+position = Vector2(0, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_3" type="AnimatedSprite2D" parent="Oceano" unique_id=406704690]
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_4" type="AnimatedSprite2D" parent="Oceano" unique_id=1739273560]
+position = Vector2(0, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_5" type="AnimatedSprite2D" parent="Oceano" unique_id=1547718502]
+position = Vector2(0, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_3_6" type="AnimatedSprite2D" parent="Oceano" unique_id=263723104]
+position = Vector2(0, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_0" type="AnimatedSprite2D" parent="Oceano" unique_id=917578828]
+position = Vector2(342, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_1" type="AnimatedSprite2D" parent="Oceano" unique_id=1491252257]
+position = Vector2(342, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_2" type="AnimatedSprite2D" parent="Oceano" unique_id=699882271]
+position = Vector2(342, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_3" type="AnimatedSprite2D" parent="Oceano" unique_id=1038218925]
+position = Vector2(342, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_4" type="AnimatedSprite2D" parent="Oceano" unique_id=49677418]
+position = Vector2(342, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_5" type="AnimatedSprite2D" parent="Oceano" unique_id=312269554]
+position = Vector2(342, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_4_6" type="AnimatedSprite2D" parent="Oceano" unique_id=1765095077]
+position = Vector2(342, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_0" type="AnimatedSprite2D" parent="Oceano" unique_id=980513782]
+position = Vector2(684, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_1" type="AnimatedSprite2D" parent="Oceano" unique_id=661866837]
+position = Vector2(684, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_2" type="AnimatedSprite2D" parent="Oceano" unique_id=1474339369]
+position = Vector2(684, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_3" type="AnimatedSprite2D" parent="Oceano" unique_id=2002448006]
+position = Vector2(684, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_4" type="AnimatedSprite2D" parent="Oceano" unique_id=2037075869]
+position = Vector2(684, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_5" type="AnimatedSprite2D" parent="Oceano" unique_id=204136246]
+position = Vector2(684, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_5_6" type="AnimatedSprite2D" parent="Oceano" unique_id=484352741]
+position = Vector2(684, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_0" type="AnimatedSprite2D" parent="Oceano" unique_id=479941111]
+position = Vector2(1026, -540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_1" type="AnimatedSprite2D" parent="Oceano" unique_id=1855050970]
+position = Vector2(1026, -360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_2" type="AnimatedSprite2D" parent="Oceano" unique_id=574467083]
+position = Vector2(1026, -180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_3" type="AnimatedSprite2D" parent="Oceano" unique_id=570850170]
+position = Vector2(1026, 0)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_4" type="AnimatedSprite2D" parent="Oceano" unique_id=367389617]
+position = Vector2(1026, 180)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_5" type="AnimatedSprite2D" parent="Oceano" unique_id=858370609]
+position = Vector2(1026, 360)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="Agua_6_6" type="AnimatedSprite2D" parent="Oceano" unique_id=2055647579]
+position = Vector2(1026, 540)
+scale = Vector2(1.06, 1.06)
+sprite_frames = SubResource("SpriteFrames_8s7m5")
+autoplay = "default"
+
+[node name="BarcoJogador" type="Node2D" parent="." unique_id=1821950450]
+position = Vector2(2400, 2500)
+script = ExtResource("23_sdfoc")
+
+[node name="Sprite2D" type="Sprite2D" parent="BarcoJogador" unique_id=109886557]
+texture = ExtResource("24_ntq3m")
+
+[node name="Camera2D" type="Camera2D" parent="BarcoJogador" unique_id=1966045138]
+limit_left = 0
+limit_top = 0
+limit_right = 4800
+limit_bottom = 3200
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0
+
+[node name="Inimigo1" type="Node2D" parent="." unique_id=1043939243]
+position = Vector2(2400, 1000)
+rotation = 3.1415927
+script = ExtResource("25_p7d8f")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigo1" unique_id=1783500516]
+modulate = Color(0.8, 1, 1, 1)
+texture = ExtResource("26_vix8l")
+
+[node name="Inimigo2" type="Node2D" parent="." unique_id=834627863]
+position = Vector2(1900, 1200)
+rotation = 3.1415927
+script = ExtResource("25_p7d8f")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigo2" unique_id=1620636266]
+modulate = Color(0.8, 1, 1, 1)
+texture = ExtResource("27_be3mx")
+
+[node name="Inimigo3" type="Node2D" parent="." unique_id=1455591735]
+position = Vector2(2900, 1200)
+rotation = 3.1415927
+script = ExtResource("25_p7d8f")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigo3" unique_id=2085543326]
+modulate = Color(0.8, 1, 1, 1)
+texture = ExtResource("28_dofdu")
+
+[node name="Boss" type="Node2D" parent="." unique_id=1982277768]
+position = Vector2(2400, 450)
+rotation = 3.1415927
+script = ExtResource("25_p7d8f")
+detect_radius = 1400.0
+give_up_radius = 2400.0
+is_boss = true
+max_hp = 10
+hit_radius = 80.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Boss" unique_id=1515273256]
+modulate = Color(1, 0.85, 0.85, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("29_oliep")
+
+[node name="Mira" type="Node2D" parent="." unique_id=335310726]
+script = ExtResource("30_2i7m6")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1334855762]
+
+[node name="Minimapa" type="Control" parent="HUD" unique_id=1233178056]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 180.0
+grow_horizontal = 0
+script = ExtResource("31_uto6q")
+
+[node name="ControleAudio" parent="HUD" unique_id=1400821938 instance=ExtResource("32_gxn7c")]
+offset_left = 24.0
+offset_top = 656.0
+offset_right = 324.0
+offset_bottom = 700.0
+
+[node name="BarraJogador" type="Control" parent="HUD" unique_id=2002063026]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 34.0
+offset_right = 264.0
+offset_bottom = 58.0
+script = ExtResource("34_khlyj")
+rotulo = "VIDA"
+
+[node name="BarraEnergia" type="Control" parent="HUD" unique_id=771204563]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 84.0
+offset_right = 264.0
+offset_bottom = 108.0
+script = ExtResource("35_enrgy")
+
+[node name="BarraChefe" type="Control" parent="HUD" unique_id=313202517]
+visible = false
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = 34.0
+offset_right = 220.0
+offset_bottom = 60.0
+grow_horizontal = 2
+script = ExtResource("34_khlyj")
+grupo = "boss"
+cor = Color(0.85, 0.15, 0.15, 1)
+rotulo = "CHEFE"
+apenas_em_combate = true
