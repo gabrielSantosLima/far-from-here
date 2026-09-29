@@ -4,6 +4,64 @@ Roguelike de ação naval (PvE), isométrico 2D pixelado, feito em **Godot 4.7**
 Baseado no `GDD - Far From Here.pdf` — Capitão Piteu, canhões, gestão de energia/fadiga
 e o ciclo de sono forçado.
 
+## História
+
+*(baseada no `GDD - Far From Here.pdf`)*
+
+O lendário pirata **Capitão Piteu** acumulou tesouros incalculáveis em anos de
+pilhagem, mas foi atingido por uma maldição ancestral: a **Nóvoa de Morfeu**, uma
+sonolência mística incontrolável. A caminho da aposentadoria numa ilha pacífica,
+ele adentrou inadvertidamente o **Mar Ancestral**, uma região dominada pela
+**Frota Espectral** — piratas mortos-vivos que, aproveitando seus acessos de sono
+profundo, roubaram suas **relíquias mágicas** e espalharam seu ouro pelo
+**Arquipélago dos Espectros**.
+
+Preso num ciclo infinito de névoa e perigo, Piteu precisa atravessar o
+arquipélago, afundar os navios assombrados, reunir as relíquias e romper o feitiço
+— e só assim encontrar o repouso merecido.
+
+A **cutscene inicial** resume essa história em 4 quadros: *as riquezas → o
+adormecer → a chegada dos inimigos → a vingança* (`parte_1_riquezas.png` ...
+`parte_4_vinganca.png`).
+
+## Controles
+
+| Tecla | Ação |
+|---|---|
+| `W` / `↑` | Acelerar (ajustar o pano da vela) |
+| `S` / `↓` | Desacelerar / dar ré |
+| `A` / `←` | Bombordo (virar à esquerda) |
+| `D` / `→` | Estibordo (virar à direita) |
+| `Shift` | Boost de velocidade (custa 5 de energia) |
+| Mouse | Mirar (crosshair) |
+| Botão esquerdo | Atirar bola de canhão |
+| `Espaço` / `Enter` | Avançar menu/cutscene; reiniciar (game over); voltar ao menu (vitória) |
+| `M` | Ligar/desligar a música |
+
+## Mecânicas principais
+
+- **Navegação e leme**: o jogador ajusta a vela (acelerar/ré) e vira o leme
+  (bombordo/estibordo) ao mesmo tempo; o oceano é uma grade 7×7 que segue a
+  câmera, simulando mar "infinito".
+- **Energia, fadiga e sono (mecânica core)**: o capitão tem **10 de energia**;
+  cada tiro custa **1** e o boost custa **5**. A energia recarrega **1 ponto a
+  cada 2 s**. Se zerar, ele **dorme por 3 s**: fica imóvel, um rótulo **"Zzz"**
+  aparece e, ao acordar, a energia volta ao máximo.
+- **Boost de velocidade**: `Shift` dá um pico de velocidade (×1,8 durante 2 s)
+  ao custo de 5 de energia.
+- **Combate de canhão**: as bolas viajam devagar descrevendo um arco e a **sombra
+  marca o ponto de queda** — dá tempo de desviar. Cadência de 0,7 s; os inimigos
+  revidam e o **boss dispara 3 canhões** em leque.
+- **Fogo**: de perto, os espectros usam **lança-chamas** com queimadura; o boss
+  enraivecido solta uma **explosão de fogo radial**.
+- **IA dos inimigos**: os navios ficam inertes até o jogador entrar no raio de
+  detecção; então perseguem, atiram e trocam a música para a de batalha
+  (desistem se o jogador fugir do alcance).
+- **Vidas e consequências**: jogador e boss têm **10 PV**, inimigos comuns **3**.
+  Afundar o jogador leva ao **game over**; destruir toda a frota leva à **vitória**.
+- **Minimapa**: mostra o jogador (verde), inimigos (vermelho), boss (magenta) e a
+  área visível (retângulo branco).
+
 ## Escopo atual
 
 Apenas **1 fase (Fase 1)**:
@@ -54,18 +112,6 @@ Fase1 (Node2D)
 ```
 
 A cena é gerada por `tools/build_fase1.gd` (Godot headless) e pode ser editada no editor.
-
-### Controles (navegação)
-
-| Tecla | Ação |
-|---|---|
-| `W` / `↑` | Acelerar (vela) |
-| `S` / `↓` | Desacelerar / ré |
-| `A` / `←` | Bombordo (virar à esquerda) |
-| `D` / `→` | Estibordo (virar à direita) |
-| `Shift` | Boost de velocidade (custa 5 de energia) |
-| Mouse | Mirar (crosshair) |
-| Botão esquerdo | Atirar bola de canhão |
 
 ### Tiro de canhão
 
